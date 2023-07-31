@@ -1,0 +1,2 @@
+# Nuxt
+ Starting Nux projext
