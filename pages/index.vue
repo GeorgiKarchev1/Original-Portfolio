@@ -8,7 +8,7 @@
         <span class="bar"></span>
       </button>
     </header>
-    <nav class="navbar">
+    <nav class="navbar" :class="{'show-menu': isMenuOpen}" ref="menu">
       <div class="nav-links" :class="{ 'show-menu': isMenuOpen }">
   <Nuxt-link class="home-style" @click="toggleMenu" to="/">Home</Nuxt-link>
   <Nuxt-link class="about-style" @click="toggleMenu" to="/about">About</Nuxt-link>
@@ -43,6 +43,11 @@
       width: 5rem;
      }
     
+    .nav-links {
+      display: none;
+      transition: transform 0.3s ease-in-out; 
+      transform: translateX(100%);
+    }
 
 /* Бутона */
 
@@ -50,7 +55,6 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -66,18 +70,6 @@
     transition: 0.4s;
   }
 
-  .show-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: fixed;
-    top: 70px;
-    right: 20px;
-    background-color: #18191d;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
 
   .nav-links a {
     margin-bottom: 10px;
@@ -85,6 +77,23 @@
     color: white;
     font-size: 18px;
   }
+
+  .show-menu .nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: #18191d;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0%);
+}
+
+
 
 </style>
 
