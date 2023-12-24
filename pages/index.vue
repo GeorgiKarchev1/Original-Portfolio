@@ -1,17 +1,9 @@
 <template>
   <div>
     <Header />
-    <section>
-      <div class="About-me">
-        <h2>Hello, I'm Georgi Karchev, 17 years old from Plovdiv. Programming is my passion, and I want to develop it professionally. My goal is to create something unique and personal in the field of software development. I actively search opportunities for learning, practice, and connecting with new people who share similar interests.</h2>
-      </div>
-    </section>
-
-    <section>
-      <div class="Contact-me">
-        <h1>Contact Me</h1>
-      </div>
-    </section>
+    <Georgi />
+    <About />
+    <Contact />
   </div>
 </template>
 
@@ -30,11 +22,17 @@ body {
 </style>
 
 <script>
+/* Components */
 import Header from '~/components/Header.vue';
-
+import About from '~/components/About.vue';
+import Contact from '~/components/Contact.vue';
+import Georgi from '~/components/Georgi.vue';
 export default {
   components: { 
     Header,
+    About,
+    Contact,
+    Georgi,
   },
   data() {
     return {
