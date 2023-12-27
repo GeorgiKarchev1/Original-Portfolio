@@ -2,7 +2,7 @@
     <div>
   <section class="pastrak">
     <div class="Contact-me">
-      <h1>Contact Me</h1>
+      <h1 >Contact Me</h1>
     </div>
   </section>
     </div>
@@ -10,7 +10,6 @@
   
   <style lang="css">
        .pastrak {
-    background-color: blue ;
     display: flex;
     padding-block: 5rem;
   }
