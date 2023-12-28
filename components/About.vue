@@ -1,6 +1,6 @@
 <template>
     <div>
-      <section class="pedal" data-aos="fade-left" >
+      <section class="pedal">
         <img data-aos="fade-right" src="../assets/strak2.png" class="strak" alt="img of me "/>
         <div data-aos="fade-left" class="About-me">
           <h2 data-aos="zoom-in-up" class="me">About Me</h2>
@@ -69,7 +69,7 @@
           margin-top: 1rem; 
         }
 
-      
+
   </style>
   
   <script>
