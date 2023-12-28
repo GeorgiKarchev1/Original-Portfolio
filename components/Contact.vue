@@ -1,8 +1,8 @@
 <template>
     <div>
   <section class="pastrak">
-    <div class="Contact-me">
-      <h1 >Contact Me</h1>
+    <div data-aos="fade-up" class="Contact-me">
+      <h1>Contact Me</h1>
     </div>
   </section>
     </div>

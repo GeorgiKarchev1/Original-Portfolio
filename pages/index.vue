@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <Header />
     <Georgi />
     <About />
