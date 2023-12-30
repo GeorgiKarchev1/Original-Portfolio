@@ -2,7 +2,7 @@
     <div>
   <section class="pastrak">
     <div data-aos="fade-up" class="Contact-me">
-      <h1>Contact Me</h1>
+      <h1>Get in Touch</h1>
     </div>
   </section>
     </div>
@@ -16,6 +16,7 @@
 
   .Contact-me {
     color: white;
+    font-size: 1.7rem;
     max-width: 50rem;
     margin-inline: auto;
     padding-inline: 1rem;

@@ -12,6 +12,7 @@
 <style lang="css">
 body {
   background: #18191d;
+  overflow-x: hidden;
 }
 
 .logo {

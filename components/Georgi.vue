@@ -7,13 +7,13 @@
       <div class="intro-text">
         <h1 class="name left">GEORGI</h1>
         <h1 class="name right">KARCHEV</h1>
-        <div class="social-buttons">
+      </div>
+        <div class="social-buttons" data-aos="zoom-in-down">
           <button @click="goToGitHub" class="social-button"><Icon name="uil:github"/></button>
-          <button @click="goToLinkedIn" class="social-button"><Icon name="bi:linkedin" /></button>
+          <button @click="goToLinkedIn" class="social-button"><Icon name= "mdi:linkedin" /></button>
           <button @click="goToEmail" class="social-button"><Icon name="material-symbols:mail-sharp" /></button>
           <button @click="goToInstagram" class="social-button"><Icon name="mdi:instagram" /></button>
     </div>
-      </div>
     </section>
   </div>
 </template>
@@ -78,15 +78,12 @@
 
 .social-button {
   border: none;
-  padding: 20px; /* Променете размера на бутоните */
-  margin: 10px; /* Променете разстоянието между бутоните */
   border-radius: 50%; /* Радиус на бутоните - прави ги кръгли */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-button:hover {
-  background-color: #0056b3; /* Пример за нов цвят на фона при хофвър */
   transform: scale(1.1); /* Увеличаване на размера при хофвър */
 }
 
@@ -98,13 +95,65 @@
 }
 
 .social-button {
-    padding: 15px; /* Променете размера на бутоните при по-малък екран, ако е необходимо */
-    margin: 5px; /* Променете разстоянието между бутоните при по-малък екран */
+    padding: 5px; /* Променете размера на бутоните при по-малък екран, ако е необходимо */
+    margin: 10px; /* Променете разстоянието между бутоните при по-малък екран */
   }
+
+
+  @media screen and (max-width: 614px) {
+    .intro-text {
+      font-size: 3.5rem;
+
+
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .intro-text {
+      font-size: 3.2rem;
+
+
+    }
+}
+
+@media screen and (max-width: 507px) {
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5rem;
+}
+
+.right {
+  padding-left: 1rem;
+}
+}
+
+
+
 
 
 </style>
 
 <script>
-
+export default {
+  methods: {
+    goToGitHub() {
+      // Пренасочване към GitHub
+      window.location.href = 'https://github.com/GeorgiKarchev1';
+    },
+    goToLinkedIn() {
+      // Пренасочване към LinkedIn
+      window.location.href = 'https://www.linkedin.com/in/твой-потребител';
+    },
+    goToEmail() {
+      // Пренасочване към имейл
+      window.location.href = 'mailto:georgikarchev5@gmail.com';
+    },
+    goToInstagram() {
+      // Пренасочване към Instagram
+      window.location.href = 'https://www.instagram.com/georgi_karchev/';
+    },
+  },
+};
 </script>

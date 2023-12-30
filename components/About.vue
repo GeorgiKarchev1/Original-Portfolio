@@ -36,7 +36,7 @@
        left: 50%;
        transform: translateX(-50%);
        width: 80%;
-       height: 2px;
+       height: 4px;
        background-color: #ffffff; /* Цвят на линията */
       }
 
@@ -47,7 +47,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 80%;
-        height: 2px;
+        height: 4px;
         background-color: #ffffff; /* Цвят на линията */
        }
 
