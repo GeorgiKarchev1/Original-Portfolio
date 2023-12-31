@@ -68,11 +68,23 @@
           text-align: center; 
           margin-top: 1rem; 
         }
-
+        .pedal::before,
+        .pedal::after {
+          opacity: 0; /* Задайте начална прозрачност на 0 */
+          transition: opacity 0.5s ease;
+  }
 
   </style>
   
   <script>
-
+    export default {
+  methods: {
+    activateAnimation() {
+      // Активирайте анимацията след зареждане на изображението
+      document.querySelector('.pedal::before').style.opacity = '1';
+      document.querySelector('.pedal::after').style.opacity = '1';
+    },
+  },
+};
   </script>
  

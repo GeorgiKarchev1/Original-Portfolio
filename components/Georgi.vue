@@ -127,8 +127,20 @@
 .right {
   padding-left: 1rem;
 }
+
 }
 
+@media screen and (max-width: 397px) {
+  .intro-text {
+    line-height: 0.2rem;
+    font-size: 2.5rem;
+}
+
+.right {
+  padding-left: 0.5rem;
+}
+
+}
 
 
 
