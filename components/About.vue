@@ -75,7 +75,6 @@
           margin-bottom: 1rem;
           color: white;
           font-size: 2.5rem;
-          order: 1;
         }
 
         .text {
@@ -83,31 +82,34 @@
           line-height: 1.5;
           text-align: center; 
           margin-top: 1rem; 
-          order: 2;
         }
        
         @media screen and (min-width: 856px) {
        
           .About-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+         }
 
-  .strak {
-    margin-right: 2rem;
-    margin-left: 0;
-  }
+          .strak {
+           margin-right: 2rem;
+           margin-left: 0;
+        }
 
-  .me, .text {
-    text-align: right;
-  }
 
-  .text-container {
-    order: 1; /* Преместваме .text-container горе */
-    align-self: flex-start; /* Поставяме .text-container отново отгоре */
-  }
+        .text-container {
+        order: 1; /* Преместваме .text-container горе */
+        align-self: flex-start; /* Поставяме .text-container отново отгоре */
+        }
+          .me {
+            order: 2;
+            text-align: center;
+          }
 
+          .text { 
+            order: 3;
+          }
   
         }
   </style>
