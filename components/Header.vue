@@ -8,11 +8,10 @@
     </button>
     <nav class="navbar" :class="{ 'show-menu': isMenuOpen }" ref="menu">
       <div class="nav-links" :class="{ 'show-menu': isMenuOpen }">
-        <Nuxt-link class="home-style" @click="toggleMenu" to="/">Home</Nuxt-link>
-        <Nuxt-link class="about-style" @click="toggleMenu" to="/about">About</Nuxt-link>
-        <Nuxt-link class="contact-style" @click="toggleMenu" to="/contact">Contact</Nuxt-link>
+        <Nuxt-link class="home-style"  to="/">Home</Nuxt-link>
+        <Nuxt-link @click="scrollToSection('about-me-section')" class="about-style" >About</Nuxt-link>
+        <Nuxt-link @click="scrollToSection('contact-section')" class="contact-style" >Contact</Nuxt-link>
       </div>
-      <div class="linkedin"></div>
     </nav>
   </header>
 </template>
@@ -29,10 +28,23 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
       document.body.classList.toggle('menu-active', this.isMenuOpen);
     },
+
+    scrollToSection(sectionId) {
+      this.isMenuOpen = false;
+      const targetSection = document.getElementById(sectionId);
+
+      if (targetSection) {
+        this.$nextTick(() => {
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth',
+          });
+        });
+      }
+    },
   },
 };
 </script>
-
 <style scoped>
 
 .hamburger-btn {
@@ -111,6 +123,49 @@ body.menu-active .hamburger-btn .bar:nth-child(3) {
 .hamburger-btn .bar {
   transition: 0.4s;
 }
+
+
+
+@media screen and (min-width: 856px) {
+  .hamburger-btn {
+    display: none; /* Скрива hamburger бутона */
+  }
+
+  .nav-links {
+    display: flex !important; /* Променя стиловете за линковете, за да станат видими */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; /* Поставя линковете в десния ъгъл */
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    transform: none;
+  }
+ 
+  .navbar.show-menu {
+    height: auto;
+    position: static;
+    
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+    color: white; /* Задава цвета на линковете на бяло */
+    text-decoration: none; /* Премахва подчертаването под линковете */
+    padding: 10px; /* Добавя вътрешен падинг за по-добро пространство */
+  }
+
+  .nav-links a:hover {
+    color: green; /* Променя цвета при ховър, както вашият оригинален стил */
+  }
+
+  .navbar.show-menu .nav-links {
+    display: none; /* Скрива линковете, когато менюто е активирано */
+  }
+}
+
 
 
 </style>
