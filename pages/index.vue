@@ -13,9 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-.logo {
-  width: 5rem;
-}
+
 
 
 

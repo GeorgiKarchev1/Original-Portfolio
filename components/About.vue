@@ -115,6 +115,10 @@
 
   
         }
+
+        .logo {
+        width: 5rem;
+      }
   </style>
   
   <script>
