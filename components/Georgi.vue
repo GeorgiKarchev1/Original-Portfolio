@@ -8,7 +8,7 @@
         <h1 class="name left">GEORGI</h1>
         <h1 class="name right">KARCHEV</h1>
       </div>
-        <div class="social-buttons" data-aos="zoom-in-down">
+        <div class="social-buttons" >
           <button @click="goToGitHub" class="social-button"><Icon name="uil:github"/></button>
           <button @click="goToLinkedIn" class="social-button"><Icon name= "mdi:linkedin" /></button>
           <button @click="goToEmail" class="social-button"><Icon name="material-symbols:mail-sharp" /></button>
@@ -24,7 +24,7 @@
   font-size: 4rem;
   align-items: center;
   flex-direction: column;
-  padding-block: 7rem;
+  padding-block: 4rem;
   color: white;
   line-height: 4rem;
 }

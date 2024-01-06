@@ -8,7 +8,7 @@
           skills align with your project needs, let's chat.
         </h3>
         <div class="pismo-container" data-aos="fade-left">
-        <img src="../public/green.png" class="pismo" alt="img-of-letter" />
+        <img src="/green.png" class="pismo" alt="img-of-letter" />
         <h3 class="mail">Mail me</h3>
         <h3 class="mail-text">georgikarchev5@gmail.com</h3>
         </div>

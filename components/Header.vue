@@ -46,7 +46,8 @@ export default {
 };
 </script>
 <style scoped>
-
+.navbar {
+}
 .hamburger-btn {
   background: none;
   border: none;
