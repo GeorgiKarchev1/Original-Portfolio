@@ -1,2 +1,2 @@
-# Why i build second portfolio website with similar design ???
+# Why i build second portfolio website with similar design?
 I started making a new website with a similar design to the previous one, as I was advised by a colleague that my previous design wasn't good enough and wasn't up-to-date for the current time. Instead of modifying my old website, i started a new one and tried to create a different design that would be appealing, but still to my taste. And again, this website was never launched because once again, I DIDN'T LIKE IT.
