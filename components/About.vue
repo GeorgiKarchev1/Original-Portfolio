@@ -3,7 +3,7 @@
       <section id="about-me-section" class="pedal">
         <hr class="line"  data-aos="fade-left"/>
         <div data-aos="fade-left" class="About-me">
-          <img src="../assets/strak2.png" class="strak" alt="img of me " data-aos="fade-up-right"/>
+          <img src="../assets/strak2ANON.png" class="strak" alt="img of me " data-aos="fade-up-right"/>
           <div class="text-container">
           <h2 data-aos="zoom-in-up" class="me">About Me</h2>
           <h3 class="text" data-aos="zoom-in-up">Hello, I'm Georgi Karchev, 17 years old from Plovdiv. Programming is my passion, and I want to develop it professionally. My goal is to create something unique and personal in the field of software development. I actively search opportunities for learning, practice, and connecting with new people who share similar interests.</h3>
